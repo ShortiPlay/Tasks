@@ -237,7 +237,7 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.FromArgb(94, 163, 222);
+            button2.BackColor = Color.FromArgb(134, 207, 250);
             button2.Location = new Point(127, 407);
             button2.Name = "button2";
             button2.Size = new Size(105, 49);
@@ -248,7 +248,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(94, 163, 222);
+            button1.BackColor = Color.FromArgb(134, 207, 250);
             button1.Location = new Point(253, 407);
             button1.Name = "button1";
             button1.Size = new Size(105, 49);
@@ -380,7 +380,7 @@
             // 
             // button4
             // 
-            button4.BackColor = Color.FromArgb(94, 163, 222);
+            button4.BackColor = Color.FromArgb(134, 207, 250);
             button4.ForeColor = Color.FromArgb(0, 0, 64);
             button4.Location = new Point(15, 271);
             button4.Name = "button4";
@@ -392,7 +392,7 @@
             // 
             // button3
             // 
-            button3.BackColor = Color.FromArgb(94, 163, 222);
+            button3.BackColor = Color.FromArgb(134, 207, 250);
             button3.ForeColor = Color.FromArgb(0, 0, 64);
             button3.Location = new Point(154, 271);
             button3.Name = "button3";

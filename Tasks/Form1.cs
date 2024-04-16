@@ -17,20 +17,34 @@ namespace Tasks
             textBox2.Clear();
             textBox1.Clear();
             textBox2.Focus();
-            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form3 newForm = new Form3();
-            newForm.Show();
+            if (string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrEmpty(textBox3.Text))
+                return;
+            ListViewItem Item = new ListViewItem(textBox4.Text);
+            Item.SubItems.Add(textBox3.Text);
+            listView2.Items.Add(Item);
+            textBox4.Clear();
+            textBox3.Clear();
+            textBox4.Focus();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (listView1.Items.Count >0)
+            if (listView1.Items.Count > 0)
             {
                 listView1.Items.Remove(listView1.SelectedItems[0]);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (listView2.Items.Count > 0)
+            {
+                listView2.Items.Remove(listView2.SelectedItems[0]);
             }
         }
     }

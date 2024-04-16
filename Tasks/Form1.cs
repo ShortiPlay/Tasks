@@ -47,5 +47,10 @@ namespace Tasks
                 listView2.Items.Remove(listView2.SelectedItems[0]);
             }
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

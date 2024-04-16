@@ -78,11 +78,12 @@
             tabControl1.Location = new Point(-6, 1);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(808, 450);
+            tabControl1.Size = new Size(812, 501);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            tabPage1.BackColor = Color.Azure;
             tabPage1.Controls.Add(label10);
             tabPage1.Controls.Add(comboBox6);
             tabPage1.Controls.Add(label9);
@@ -100,18 +101,18 @@
             tabPage1.Controls.Add(button2);
             tabPage1.Controls.Add(button1);
             tabPage1.Controls.Add(listView1);
+            tabPage1.ForeColor = Color.FromArgb(0, 0, 64);
             tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(800, 417);
+            tabPage1.Size = new Size(804, 468);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Задачи";
-            tabPage1.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(482, 325);
+            label10.Location = new Point(568, 251);
             label10.Name = "label10";
             label10.Size = new Size(218, 20);
             label10.TabIndex = 21;
@@ -121,7 +122,7 @@
             // 
             comboBox6.FormattingEnabled = true;
             comboBox6.Items.AddRange(new object[] { "В процессе выполнения", "Выполнена", "Отменена", "Запланирована" });
-            comboBox6.Location = new Point(482, 359);
+            comboBox6.Location = new Point(581, 274);
             comboBox6.Name = "comboBox6";
             comboBox6.Size = new Size(192, 28);
             comboBox6.TabIndex = 20;
@@ -129,7 +130,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(482, 233);
+            label9.Location = new Point(558, 178);
             label9.Name = "label9";
             label9.Size = new Size(234, 20);
             label9.TabIndex = 19;
@@ -139,21 +140,21 @@
             // 
             comboBox5.FormattingEnabled = true;
             comboBox5.Items.AddRange(new object[] { "Не важные и срочные", "Важные и срочные", "Не срочные и не важные", "Важные но не срочные" });
-            comboBox5.Location = new Point(482, 265);
+            comboBox5.Location = new Point(580, 201);
             comboBox5.Name = "comboBox5";
             comboBox5.Size = new Size(192, 28);
             comboBox5.TabIndex = 18;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(227, 360);
+            textBox1.Location = new Point(253, 360);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(192, 27);
             textBox1.TabIndex = 17;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(6, 178);
+            textBox2.Location = new Point(140, 201);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(200, 27);
             textBox2.TabIndex = 16;
@@ -163,7 +164,7 @@
             comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox3.FormattingEnabled = true;
             comboBox3.Items.AddRange(new object[] { "Не важные и срочные", "Важные и срочные", "Не срочные и не важные", "Важные но не срочные" });
-            comboBox3.Location = new Point(227, 265);
+            comboBox3.Location = new Point(253, 265);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(192, 28);
             comboBox3.TabIndex = 15;
@@ -171,7 +172,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(227, 233);
+            label5.Location = new Point(280, 242);
             label5.Name = "label5";
             label5.Size = new Size(135, 20);
             label5.TabIndex = 14;
@@ -180,7 +181,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(227, 325);
+            label4.Location = new Point(280, 336);
             label4.Name = "label4";
             label4.Size = new Size(135, 20);
             label4.TabIndex = 13;
@@ -189,7 +190,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(56, 325);
+            label3.Location = new Point(95, 336);
             label3.Name = "label3";
             label3.Size = new Size(104, 20);
             label3.TabIndex = 11;
@@ -200,7 +201,7 @@
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "В процессе выполнения", "Выполнена", "Отменена", "Запланирована" });
-            comboBox2.Location = new Point(14, 359);
+            comboBox2.Location = new Point(40, 359);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(192, 28);
             comboBox2.TabIndex = 10;
@@ -208,7 +209,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(69, 233);
+            label2.Location = new Point(95, 242);
             label2.Name = "label2";
             label2.Size = new Size(87, 20);
             label2.TabIndex = 9;
@@ -216,10 +217,11 @@
             // 
             // comboBox1
             // 
+            comboBox1.BackColor = Color.Lavender;
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Важныве и долгосрочные", "Текукщие важные", "Повседневные", "Ситуатывные" });
-            comboBox1.Location = new Point(14, 265);
+            comboBox1.Location = new Point(40, 265);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(192, 28);
             comboBox1.TabIndex = 8;
@@ -227,7 +229,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(77, 155);
+            label1.Location = new Point(204, 178);
             label1.Name = "label1";
             label1.Size = new Size(77, 20);
             label1.TabIndex = 7;
@@ -235,22 +237,24 @@
             // 
             // button2
             // 
-            button2.Location = new Point(620, 178);
+            button2.BackColor = Color.LightSkyBlue;
+            button2.Location = new Point(127, 407);
             button2.Name = "button2";
-            button2.Size = new Size(96, 38);
+            button2.Size = new Size(105, 49);
             button2.TabIndex = 2;
             button2.Text = "Удалить";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(482, 178);
+            button1.BackColor = Color.LightSkyBlue;
+            button1.Location = new Point(253, 407);
             button1.Name = "button1";
-            button1.Size = new Size(105, 38);
+            button1.Size = new Size(105, 49);
             button1.TabIndex = 1;
             button1.Text = "Добавить";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // listView1
@@ -258,9 +262,9 @@
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
             listView1.FullRowSelect = true;
             listView1.GridLines = true;
-            listView1.Location = new Point(3, 6);
+            listView1.Location = new Point(7, 6);
             listView1.Name = "listView1";
-            listView1.Size = new Size(798, 143);
+            listView1.Size = new Size(791, 150);
             listView1.TabIndex = 0;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -301,6 +305,7 @@
             // 
             // tabPage2
             // 
+            tabPage2.BackColor = Color.Azure;
             tabPage2.Controls.Add(comboBox4);
             tabPage2.Controls.Add(label6);
             tabPage2.Controls.Add(label7);
@@ -313,25 +318,25 @@
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(800, 417);
+            tabPage2.Size = new Size(804, 468);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Сотрудники";
-            tabPage2.UseVisualStyleBackColor = true;
             // 
             // comboBox4
             // 
             comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox4.FormattingEnabled = true;
             comboBox4.Items.AddRange(new object[] { "Программист", "Менеджер", "Дизайнер", "Тестировщик", "Team lead", "Системный адиминстратор" });
-            comboBox4.Location = new Point(34, 245);
+            comboBox4.Location = new Point(43, 219);
             comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(200, 28);
+            comboBox4.Size = new Size(172, 28);
             comboBox4.TabIndex = 13;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(90, 208);
+            label6.ForeColor = Color.FromArgb(0, 0, 64);
+            label6.Location = new Point(91, 196);
             label6.Name = "label6";
             label6.Size = new Size(86, 20);
             label6.TabIndex = 12;
@@ -340,7 +345,8 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(102, 110);
+            label7.ForeColor = Color.FromArgb(0, 0, 64);
+            label7.Location = new Point(103, 112);
             label7.Name = "label7";
             label7.Size = new Size(57, 20);
             label7.TabIndex = 11;
@@ -349,7 +355,8 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(68, 17);
+            label8.ForeColor = Color.FromArgb(0, 0, 64);
+            label8.Location = new Point(69, 33);
             label8.Name = "label8";
             label8.Size = new Size(127, 20);
             label8.TabIndex = 10;
@@ -357,10 +364,11 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(43, 146);
+            textBox3.Location = new Point(43, 135);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(172, 27);
             textBox3.TabIndex = 9;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // textBox4
             // 
@@ -371,32 +379,38 @@
             // 
             // button4
             // 
-            button4.Location = new Point(149, 333);
+            button4.BackColor = Color.LightSkyBlue;
+            button4.ForeColor = Color.FromArgb(0, 0, 64);
+            button4.Location = new Point(15, 271);
             button4.Name = "button4";
-            button4.Size = new Size(102, 41);
+            button4.Size = new Size(102, 56);
             button4.TabIndex = 3;
             button4.Text = "Удалить";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(14, 333);
+            button3.BackColor = Color.LightSkyBlue;
+            button3.ForeColor = Color.FromArgb(0, 0, 64);
+            button3.Location = new Point(154, 271);
             button3.Name = "button3";
-            button3.Size = new Size(102, 41);
+            button3.Size = new Size(102, 56);
             button3.TabIndex = 2;
             button3.Text = "Добавить";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // listView2
             // 
+            listView2.BackColor = Color.White;
             listView2.Columns.AddRange(new ColumnHeader[] { columnHeader13, columnHeader14, columnHeader15 });
+            listView2.ForeColor = Color.FromArgb(0, 0, 64);
             listView2.FullRowSelect = true;
             listView2.GridLines = true;
             listView2.Location = new Point(273, 6);
             listView2.Name = "listView2";
-            listView2.Size = new Size(524, 408);
+            listView2.Size = new Size(524, 453);
             listView2.TabIndex = 1;
             listView2.UseCompatibleStateImageBehavior = false;
             listView2.View = View.Details;
@@ -422,7 +436,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(804, 501);
             Controls.Add(tabControl1);
             Name = "Form1";
             Text = "Form1";

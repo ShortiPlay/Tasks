@@ -9,27 +9,20 @@ namespace Tasks
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox1.Text))
-                return;
-            ListViewItem item = new ListViewItem(textBox2.Text);
-            item.SubItems.Add(textBox1.Text);
-            listView1.Items.Add(item);
+            add(textBox2.Text, comboBox1.Text, comboBox2.Text, textBox1.Text, comboBox3.Text);
             textBox2.Clear();
+            comboBox1.SelectedIndex = -1;
+            comboBox2.SelectedIndex = -1;
             textBox1.Clear();
-            textBox2.Focus();
-
+            comboBox3.SelectedIndex = -1;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrEmpty(textBox3.Text))
-                return;
-            ListViewItem Item = new ListViewItem(textBox4.Text);
-            Item.SubItems.Add(textBox3.Text);
-            listView2.Items.Add(Item);
+            addColoborators(textBox4.Text, textBox3.Text, comboBox4.Text);
             textBox4.Clear();
             textBox3.Clear();
-            textBox4.Focus();
+            comboBox4.SelectedIndex = -1;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -51,6 +44,18 @@ namespace Tasks
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        private void add(string titel, string type, string status, string term, string urgency)
+        {
+            string[] row = {  titel, type, status, term, urgency };
+            ListViewItem item = new ListViewItem(row);
+            listView1.Items.Add(item);
+        }
+        private void addColoborators(string employee, string missia, string post)
+        {
+            string[] rows = { employee, missia, post };
+            ListViewItem item = new ListViewItem(rows);
+            listView2.Items.Add(item);
         }
     }
 }

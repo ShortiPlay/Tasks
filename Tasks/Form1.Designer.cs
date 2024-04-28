@@ -47,12 +47,11 @@
             button2 = new Button();
             button1 = new Button();
             listView1 = new ListView();
-            columnHeader1 = new ColumnHeader();
-            columnHeader2 = new ColumnHeader();
-            columnHeader3 = new ColumnHeader();
-            columnHeader4 = new ColumnHeader();
-            columnHeader5 = new ColumnHeader();
-            columnHeader6 = new ColumnHeader();
+            titel = new ColumnHeader();
+            type = new ColumnHeader();
+            status = new ColumnHeader();
+            term = new ColumnHeader();
+            urgency = new ColumnHeader();
             tabPage2 = new TabPage();
             comboBox4 = new ComboBox();
             label6 = new Label();
@@ -63,9 +62,9 @@
             button4 = new Button();
             button3 = new Button();
             listView2 = new ListView();
-            columnHeader13 = new ColumnHeader();
-            columnHeader14 = new ColumnHeader();
-            columnHeader15 = new ColumnHeader();
+            employee = new ColumnHeader();
+            missia = new ColumnHeader();
+            post = new ColumnHeader();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -259,7 +258,7 @@
             // 
             // listView1
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
+            listView1.Columns.AddRange(new ColumnHeader[] { titel, type, status, term, urgency });
             listView1.ForeColor = SystemColors.Desktop;
             listView1.FullRowSelect = true;
             listView1.GridLines = true;
@@ -270,39 +269,34 @@
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
             // 
-            // columnHeader1
+            // titel
             // 
-            columnHeader1.Text = "Название";
-            columnHeader1.Width = 170;
+            titel.Text = "Название";
+            titel.Width = 170;
             // 
-            // columnHeader2
+            // type
             // 
-            columnHeader2.Text = "Тип задачи";
-            columnHeader2.TextAlign = HorizontalAlignment.Center;
-            columnHeader2.Width = 110;
+            type.Text = "Тип задачи";
+            type.TextAlign = HorizontalAlignment.Center;
+            type.Width = 110;
             // 
-            // columnHeader3
+            // status
             // 
-            columnHeader3.Text = "Статус задачи";
-            columnHeader3.TextAlign = HorizontalAlignment.Center;
-            columnHeader3.Width = 110;
+            status.Text = "Статус задачи";
+            status.TextAlign = HorizontalAlignment.Center;
+            status.Width = 110;
             // 
-            // columnHeader4
+            // term
             // 
-            columnHeader4.Text = "Срок выполнения";
-            columnHeader4.TextAlign = HorizontalAlignment.Center;
-            columnHeader4.Width = 145;
+            term.Text = "Срок выполнения";
+            term.TextAlign = HorizontalAlignment.Center;
+            term.Width = 145;
             // 
-            // columnHeader5
+            // urgency
             // 
-            columnHeader5.Text = "Срочность задачи";
-            columnHeader5.TextAlign = HorizontalAlignment.Center;
-            columnHeader5.Width = 140;
-            // 
-            // columnHeader6
-            // 
-            columnHeader6.Text = "Отвественный";
-            columnHeader6.Width = 115;
+            urgency.Text = "Срочность задачи";
+            urgency.TextAlign = HorizontalAlignment.Center;
+            urgency.Width = 140;
             // 
             // tabPage2
             // 
@@ -405,7 +399,7 @@
             // listView2
             // 
             listView2.BackColor = Color.White;
-            listView2.Columns.AddRange(new ColumnHeader[] { columnHeader13, columnHeader14, columnHeader15 });
+            listView2.Columns.AddRange(new ColumnHeader[] { employee, missia, post });
             listView2.ForeColor = Color.FromArgb(0, 0, 64);
             listView2.FullRowSelect = true;
             listView2.GridLines = true;
@@ -416,22 +410,22 @@
             listView2.UseCompatibleStateImageBehavior = false;
             listView2.View = View.Details;
             // 
-            // columnHeader13
+            // employee
             // 
-            columnHeader13.Text = "ФИО Сотрудника";
-            columnHeader13.Width = 170;
+            employee.Text = "ФИО Сотрудника";
+            employee.Width = 170;
             // 
-            // columnHeader14
+            // missia
             // 
-            columnHeader14.Text = "Задача (название)";
-            columnHeader14.TextAlign = HorizontalAlignment.Center;
-            columnHeader14.Width = 200;
+            missia.Text = "Задача (название)";
+            missia.TextAlign = HorizontalAlignment.Center;
+            missia.Width = 200;
             // 
-            // columnHeader15
+            // post
             // 
-            columnHeader15.Text = "Должность";
-            columnHeader15.TextAlign = HorizontalAlignment.Center;
-            columnHeader15.Width = 150;
+            post.Text = "Должность";
+            post.TextAlign = HorizontalAlignment.Center;
+            post.Width = 150;
             // 
             // Form1
             // 
@@ -456,18 +450,18 @@
         private TabPage tabPage1;
         private ListView listView1;
         private TabPage tabPage2;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
-        private ColumnHeader columnHeader4;
-        private ColumnHeader columnHeader5;
-        private ColumnHeader columnHeader6;
+        private ColumnHeader titel;
+        private ColumnHeader type;
+        private ColumnHeader status;
+        private ColumnHeader term;
+        private ColumnHeader urgency;
+        private ColumnHeader name;
         private Button button2;
         private Button button1;
         private ListView listView2;
-        private ColumnHeader columnHeader13;
-        private ColumnHeader columnHeader14;
-        private ColumnHeader columnHeader15;
+        private ColumnHeader employee;
+        private ColumnHeader missia;
+        private ColumnHeader post;
         private Button button4;
         private Button button3;
         private Label label1;

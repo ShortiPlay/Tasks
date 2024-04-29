@@ -9,7 +9,7 @@ namespace Tasks
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(comboBox2.Text) || string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(comboBox3.text)))
+            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(comboBox2.Text) || string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(comboBox3.Text))
             {
                 MessageBox.Show("Введите что бы добавить", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -34,7 +34,7 @@ namespace Tasks
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (listView1.Items.Count < 0)
+            if (listView1.Items.Count > 0)
             {
                 listView1.Items.Remove(listView1.SelectedItems[0]);
             }

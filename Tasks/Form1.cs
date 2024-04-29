@@ -9,12 +9,12 @@ namespace Tasks
 
         private void button1_Click(object sender, EventArgs e)
         {
-            add(textBox2.Text, comboBox1.Text, comboBox2.Text, textBox1.Text, comboBox3.Text);
-            textBox2.Clear();
-            comboBox1.SelectedIndex = -1;
-            comboBox2.SelectedIndex = -1;
-            textBox1.Clear();
-            comboBox3.SelectedIndex = -1;
+                add(textBox2.Text, comboBox1.Text, comboBox2.Text, textBox1.Text, comboBox3.Text);
+                textBox2.Clear();
+                comboBox1.SelectedIndex = -1;
+                comboBox2.SelectedIndex = -1;
+                textBox1.Clear();
+                comboBox3.SelectedIndex = -1;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -27,7 +27,7 @@ namespace Tasks
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (listView1.Items.Count > 0)
+            if (listView1.Items.Count < 0)
             {
                 listView1.Items.Remove(listView1.SelectedItems[0]);
             }

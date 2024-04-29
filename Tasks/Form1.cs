@@ -9,7 +9,11 @@ namespace Tasks
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(textBox1.Text))
+            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(comboBox2.Text) || string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(comboBox3.Text))
+            {
+                MessageBox.Show("Введите значение в текстовое поле перед добавлением.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
             {
                 add(textBox2.Text, comboBox1.Text, comboBox2.Text, textBox1.Text, comboBox3.Text);
                 textBox2.Clear();
@@ -18,25 +22,20 @@ namespace Tasks
                 textBox1.Clear();
                 comboBox3.SelectedIndex = -1;
             }
-            else
-            {
-                MessageBox.Show("Введите значение в текстовое поле перед добавлением.");
-            }
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(textBox1.Text))
+            if (string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(comboBox4.Text))
             {
-                addColoborators(textBox4.Text, textBox3.Text, comboBox4.Text);
-            textBox4.Clear();
-            textBox3.Clear();
-            comboBox4.SelectedIndex = -1;
+                MessageBox.Show("Введите значение в текстовое поле перед добавлением.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Введите значение в текстовое поле перед добавлением.");
+                addColoborators(textBox4.Text, textBox3.Text, comboBox4.Text);
+                textBox4.Clear();
+                textBox3.Clear();
+                comboBox4.SelectedIndex = -1;
             }
         }
 

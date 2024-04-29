@@ -9,12 +9,19 @@ namespace Tasks
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(comboBox2.Text) || string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(comboBox3.text)))
+            {
+                MessageBox.Show("Введите что бы добавить", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
                 add(textBox2.Text, comboBox1.Text, comboBox2.Text, textBox1.Text, comboBox3.Text);
                 textBox2.Clear();
                 comboBox1.SelectedIndex = -1;
                 comboBox2.SelectedIndex = -1;
                 textBox1.Clear();
                 comboBox3.SelectedIndex = -1;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

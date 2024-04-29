@@ -9,11 +9,7 @@ namespace Tasks
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(comboBox2.Text) || string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(comboBox3.Text))
-            {
-                MessageBox.Show("Введите что бы добавить", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
+            if (!string.IsNullOrEmpty(textBox1.Text))
             {
                 add(textBox2.Text, comboBox1.Text, comboBox2.Text, textBox1.Text, comboBox3.Text);
                 textBox2.Clear();
@@ -22,14 +18,26 @@ namespace Tasks
                 textBox1.Clear();
                 comboBox3.SelectedIndex = -1;
             }
+            else
+            {
+                MessageBox.Show("Введите значение в текстовое поле перед добавлением.");
+            }
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            addColoborators(textBox4.Text, textBox3.Text, comboBox4.Text);
+            if (!string.IsNullOrEmpty(textBox1.Text))
+            {
+                addColoborators(textBox4.Text, textBox3.Text, comboBox4.Text);
             textBox4.Clear();
             textBox3.Clear();
             comboBox4.SelectedIndex = -1;
+            }
+            else
+            {
+                MessageBox.Show("Введите значение в текстовое поле перед добавлением.");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

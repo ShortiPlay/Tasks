@@ -41,17 +41,17 @@ namespace Tasks
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (listView1.Items.Count > 0)
+            foreach (ListViewItem item in listView1.SelectedItems)
             {
-                listView1.Items.Remove(listView1.SelectedItems[0]);
+                listView1.Items.Remove(item);
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (listView2.Items.Count > 0)
+            foreach (ListViewItem item in listView2.SelectedItems)
             {
-                listView2.Items.Remove(listView2.SelectedItems[0]);
+                listView2.Items.Remove(item);
             }
         }
 

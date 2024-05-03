@@ -435,6 +435,7 @@
             ClientSize = new Size(804, 501);
             Controls.Add(tabControl1);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);

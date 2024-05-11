@@ -105,7 +105,17 @@ namespace Tasks
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            if (listView1.SelectedItems.Count > 0) 
+            {
+                ListViewItem item = listView1.SelectedItems[0];
+                if (!string.IsNullOrEmpty(item.SubItems[0].Text)) 
+                {
+                    item.SubItems[0].Text = textBoxName.Text;
+                    item.SubItems[3].Text = textBoxTime.Text;
+                    textBoxName.Clear();
+                    textBoxTime.Clear();
+                }
+            }
         }
     }
 }

@@ -36,8 +36,8 @@
             label13 = new Label();
             button5 = new Button();
             label12 = new Label();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
+            textBoxTime = new TextBox();
+            textBoxName = new TextBox();
             label11 = new Label();
             panel1 = new Panel();
             comboBox1 = new ComboBox();
@@ -136,8 +136,8 @@
             panel2.Controls.Add(label13);
             panel2.Controls.Add(button5);
             panel2.Controls.Add(label12);
-            panel2.Controls.Add(textBox6);
-            panel2.Controls.Add(textBox5);
+            panel2.Controls.Add(textBoxTime);
+            panel2.Controls.Add(textBoxName);
             panel2.Controls.Add(label11);
             panel2.Location = new Point(513, 254);
             panel2.Name = "panel2";
@@ -164,6 +164,7 @@
             button5.TabIndex = 28;
             button5.Text = "Изменить";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // label12
             // 
@@ -175,19 +176,19 @@
             label12.TabIndex = 26;
             label12.Text = "Срок выполнения";
             // 
-            // textBox6
+            // textBoxTime
             // 
-            textBox6.Location = new Point(45, 137);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(200, 27);
-            textBox6.TabIndex = 27;
+            textBoxTime.Location = new Point(45, 137);
+            textBoxTime.Name = "textBoxTime";
+            textBoxTime.Size = new Size(200, 27);
+            textBoxTime.TabIndex = 27;
             // 
-            // textBox5
+            // textBoxName
             // 
-            textBox5.Location = new Point(45, 73);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(200, 27);
-            textBox5.TabIndex = 25;
+            textBoxName.Location = new Point(45, 73);
+            textBoxName.Name = "textBoxName";
+            textBoxName.Size = new Size(200, 27);
+            textBoxName.TabIndex = 25;
             // 
             // label11
             // 
@@ -387,6 +388,7 @@
             listView1.TabIndex = 0;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
+            listView1.Click += listView1_Click;
             // 
             // titel
             // 
@@ -429,10 +431,10 @@
             tabPage2.Controls.Add(button4);
             tabPage2.Controls.Add(button3);
             tabPage2.Controls.Add(listView2);
-            tabPage2.Location = new Point(4, 29);
+            tabPage2.Location = new Point(4, 28);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1126, 537);
+            tabPage2.Size = new Size(1126, 538);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Сотрудники";
             // 
@@ -619,8 +621,8 @@
         private Label label13;
         private Button button5;
         private Label label12;
-        private TextBox textBox6;
-        private TextBox textBox5;
+        private TextBox textBoxTime;
+        private TextBox textBoxName;
         private Label label11;
         private Label label14;
         private RichTextBox richTextBox1;

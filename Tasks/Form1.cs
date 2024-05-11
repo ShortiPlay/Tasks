@@ -78,7 +78,7 @@ namespace Tasks
         //Метод добавления элеметнов в список задач
         private void add(string titel, string type, string status, string term, string urgency)
         {
-            string[] row = {  titel, type, status, term, urgency };
+            string[] row = { titel, type, status, term, urgency };
             ListViewItem item = new ListViewItem(row);
             listView1.Items.Add(item);
         }
@@ -88,6 +88,24 @@ namespace Tasks
             string[] rows = { employee, missia, post };
             ListViewItem item = new ListViewItem(rows);
             listView2.Items.Add(item);
+        }
+
+        private void listView1_Click(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+            {
+                ListViewItem item = listView1.SelectedItems[0];
+                if (item.SubItems.Count >= 2)
+                {
+                    textBoxName.Text = item.SubItems[0].Text;
+                    textBoxTime.Text = item.SubItems[3].Text;
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
